@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">  
+</head>
+<body style="background-image:url(background_image.jpg);">
+    <header>
+        <h1>
+            <span style="color: white;">NET</span><span style="color:#FF0000">FLIX</span>
+        </h1>
+        <p>Thank you for signing up at Netflix. Tell us more about your self</p>
+    </header>
+    <main id="container">
+        <form action="" id="survey-form">
+            <div class="box">
+                <label for="name">Name</label><br><br>
+                <input type="text" name="names" id="name" placeholder="Enter your name">
+            </div>
+            <div class="box">
+                <label for="age">Age</label><br><br>
+                <input type="number" name="ages" id="age" min="18" placeholder="Age">
+            </div>
+            <div class="box">
+                <label for="email">Email</label><br><br>
+                <input type="email" name="mail" id="email" placeholder="Enter your e-mail">
+            </div>
+            <div class="box">
+                <label for="content">Content type</label><br><br>
+                <select name="contenttype" id="content">
+                    <option value="series" selected>Series</option>
+                    <option value="movies">Movies</option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="#">Movie type</label><br>
+                <input type="checkbox" name="comedy-type" id="comedy" value="Comedy">
+                <label for="comedy">Comedy</label><br>
+                <input type="checkbox" name="action-type" id="action" value="Action">
+                <label for="action">Action</label><br>
+                <input type="checkbox" name="romance-type" id="romance" value="Romance" checked>
+                <label for="romance">Romance</label>
+            </div>
+            <div class="box">
+                <label for="#">Gender</label><br>
+                <input type="radio" name="man" id="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="woman" id="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="others" id="others">
+                <label for="other">Other</label>
+            </div>
+            <div class="box">
+                <label for="feedback">Feed back</label><br>
+                <textarea name="feed-back" id="feedback" cols="39" rows="5" placeholder="Any comment" style="resize: none;"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>
